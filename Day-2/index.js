@@ -15,4 +15,4 @@ var secondLargest = function (arr) {
     return second;
 }
 console.log(secondLargest([10, 5, 8, 20, 3]));          // 10
-console.log(secondLargest([100, 52, 83, 320, 23]));     // 100
+console.log(secondLargest([100, 52, 83, 320, 230]));     // 230
