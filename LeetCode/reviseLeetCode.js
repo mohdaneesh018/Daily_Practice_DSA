@@ -1,4 +1,5 @@
-12-04-2026
+12-04-2026:-
+
 Qs. 1 Two Sum:
 
 var twoSum = function (arr, target) {
@@ -15,6 +16,7 @@ var twoSum = function (arr, target) {
 }
 console.log(twoSum([2, 7, 5, 11], 12));             // [7, 5]
 console.log(twoSum([33, 43, 34, 22], 55));          // [33, 22]
+
 
 
 
@@ -46,7 +48,8 @@ console.log(isAnagram("raju", "care"));            // false
 
 
 
-13-04-2026
+13-04-2026:-
+
 Qs. 3. Reverse String in array:
 
 var reversedStr = function (strArr) {
@@ -90,3 +93,51 @@ var isCheck = function (num) {
 }
 console.log(isCheck(12321));               // true
 console.log(isCheck(12345));               // false
+
+
+
+
+
+14-04-2026:-
+
+Qs. 5. Write a code of Contains Duplicate:
+
+function isDuplicate(arr) {
+    let output = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        if (output[arr[i]]) {
+            return true;
+        }
+        output[arr[i]] = true;
+    }
+    return false;
+}
+console.log(isDuplicate([1, 2, 3, 1]));         // true
+console.log(isDuplicate([1, 2, 3, 4]));         // false
+
+
+
+
+
+Qs. 6. Write a code Best Time to Buy and Sell Stock:
+
+function isProfit(prices) {
+    let min = prices[0];
+    let profit = 0;
+
+    for(let i = 1; i < prices.length; i++) {
+        if(prices[i] < min) {
+            min = prices[i];
+        } else {
+            let currentProfit = prices[i] - min; 
+            if(currentProfit > profit) {
+                profit = currentProfit; 
+            }
+        }
+    }
+    return profit;
+}
+console.log(isProfit([7, 1, 5, 3, 6, 4]))           // 5
+console.log(isProfit([10, 20, 15, 56, 33]))         // 46
+console.log(isProfit([33, 22, 13, 5, 54, 89]))      // 84
