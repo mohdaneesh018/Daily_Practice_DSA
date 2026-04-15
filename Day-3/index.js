@@ -17,3 +17,4 @@ function moveZeros(arr) {
 }
 console.log(moveZeros([0, 1, 0, 3, 12]));    // [1, 3, 12, 0, 0];
 console.log(moveZeros([0, 0, 1]));           // [1, 0, 0];
+console.log(moveZeros([10, 20, 5, 0, 34, 45, 100]));    // [10, 20, 5, 34, 45, 100, 0];
