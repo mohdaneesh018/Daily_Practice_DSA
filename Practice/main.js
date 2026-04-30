@@ -13,5 +13,4 @@ function secondLargest(arr) {
     }
     return secMax;
 }
-console.log(secondLargest([10, 5, 20, 8, 30]));            // 20
 console.log(secondLargest([100, 355, 223, 470, 33]));      // 355
